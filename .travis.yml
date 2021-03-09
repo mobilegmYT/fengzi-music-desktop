@@ -1,0 +1,9 @@
+language: node_js
+node_js: "stable"
+
+jobs:
+  include:
+      - stage: Build Mac
+        os: osx
+        script:
+          - npm run dist:mac

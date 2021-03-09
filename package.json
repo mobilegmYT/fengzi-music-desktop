@@ -5,6 +5,7 @@
   "description": "The official desktop client for Fengzi Music",
   "main": "main.js",
   "author": "Fengzi",
+  "homepage": "https://music.fengzi.ga/",
   "devDependencies": {
     "electron": "^12.0.0",
     "electron-builder": "^22.10.5"
@@ -21,9 +22,16 @@
       "uninstallDisplayName": "疯子音乐",
       "oneClick": false,
       "allowToChangeInstallationDirectory": true
+    },
+    "mac": {
+      "category": "public.app-category.music",
+      "target": "default",
+      "icon": "icon.ico"
     }
   },
   "scripts": {
-    "dist": "electron-builder"
+    "dist": "electron-builder",
+    "dist:mac": "electron-builder --mac",
+    "dist:mwl": "electron-builder --mwl"
   }
 }
