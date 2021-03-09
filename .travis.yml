@@ -6,4 +6,4 @@ jobs:
       - stage: Build Mac
         os: osx
         script:
-          - npm run dist:mac
+          - npm run dist:publishmac
