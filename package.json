@@ -1,18 +1,29 @@
 {
   "name": "fengzi-music-desktop",
-  "version": "1.0.0",
+  "productName": "疯子音乐",
+  "version": "0.0.2",
   "description": "The official desktop client for Fengzi Music",
   "main": "main.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/F-fengzi/fengzi-music-desktop.git"
-  },
   "author": "Fengzi",
-  "bugs": {
-    "url": "https://github.com/F-fengzi/fengzi-music-desktop/issues"
+  "devDependencies": {
+    "electron": "^12.0.0",
+    "electron-builder": "^22.10.5"
   },
-  "homepage": "https://music.fengzi.ga/",
-  "dependencies": {
-    "electron": "^12.0.0"
+  "build": {
+    "appId": "com.fengzi.music",
+    "win": {
+      "target": "nsis",
+      "icon": "build/icon.ico"
+    },
+    "nsis": {
+      "installerIcon": "build/icon.ico",
+      "uninstallerIcon": "build/icon.ico",
+      "uninstallDisplayName": "疯子音乐",
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "scripts": {
+    "dist": "electron-builder"
   }
 }
