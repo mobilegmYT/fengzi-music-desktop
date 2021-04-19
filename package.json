@@ -21,8 +21,8 @@
       "icon": "icon.png"
     },
     "nsis": {
-      "installerIcon": "icon.png",
-      "uninstallerIcon": "icon.png",
+      "installerIcon": "icon.ico",
+      "uninstallerIcon": "icon.ico",
       "uninstallDisplayName": "疯子音乐",
       "oneClick": false,
       "allowToChangeInstallationDirectory": true,
