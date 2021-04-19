@@ -44,8 +44,8 @@
     "start": "electron .",
     "dist": "electron-builder",
     "dist:mac": "electron-builder --mac",
-    "dist:mwl": "electron-builder --mwl",
+    "dist:mwl": "electron-builder -mwl",
     "dist:publish-mac": "electron-builder --mac --publish always",
-    "dist:publish-mwl": "electron-builder --mwl --publish always"
+    "dist:publish-mwl": "electron-builder -mwl --publish always"
   }
 }
