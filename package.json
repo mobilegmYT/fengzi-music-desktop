@@ -34,7 +34,6 @@
       "icon": "icon.png"
     },
     "dmg": {
-      "backgroundColor": "#A44EED",
       "icon": "icon.png",
       "iconSize": 96,
       "iconTextSize": 14
