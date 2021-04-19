@@ -67,13 +67,7 @@ html,body{
     overflow: hidden;
 }
 body {
-    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
     background: #000000;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#C46A95', endColorstr='#4F2F60');
-    background-image: -webkit-linear-gradient(200deg, #C46A95, #4F2F60);
-    background-image: -moz-linear-gradient(200deg, #C46A95, #4F2F60);
-    background-image: -o-linear-gradient(200deg, #C46A95, #4F2F60);
-    background-image: -ms-linear-gradient(200deg, #C46A95, #4F2F60);
     background-image: linear-gradient(200deg, #C46A95, #4F2F60);
     overflow: hidden;
 }
@@ -87,9 +81,7 @@ body {
 }
 /* 移动端使用的模糊图像层 */
 #mobile-blur {
-    -webkit-filter: blur(50px);
     filter: blur(50px);
-    -webkit-transform: scale(1.15);
     transform: scale(1.15);
     position: absolute;
     top: 0;
@@ -108,8 +100,6 @@ body {
     width: 100%;
     height: 100%;
     background-color: #000;
-    filter:alpha(opacity=60); 
-    -moz-opacity:0.6; 
     opacity:0.6;
     top: 0;
     left: 0;
@@ -117,8 +107,6 @@ body {
 }
 
 .mobile-mask {
-    filter:alpha(opacity=60); 
-    -moz-opacity:0.6; 
     opacity:0.6;
 }
 
@@ -131,10 +119,6 @@ body {
 }
 .logo {
     transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -moz-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    -ms-transition: all 0.25s ease;
     display: inline-block;
     font-size: 23px;
     color: #dddddd;
@@ -183,13 +167,6 @@ body {
 /* 常规按钮 */
 .btn {
     transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -moz-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    -ms-transition: all 0.25s ease;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
     display: inline-block;
     position: relative;
@@ -198,7 +175,6 @@ body {
     border: 2px solid rgba(200, 200, 200, 0.5);
     color: #fff;
     opacity: .8;
-    filter: alpha(opacity=80);
     cursor: pointer;
     font-size: 14px;
     padding: 6px 25px;
@@ -207,7 +183,6 @@ body {
 .btn:hover {
     border: 2px solid #fff;
     opacity: 1;
-    filter: alpha(opacity=100);
 }
 .btn[data-action='player'] {
     display: none;
@@ -222,8 +197,6 @@ body {
     padding-bottom: 12px;
 }
 .search-group>input, .search-group>button {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 .search-group>input {
@@ -326,11 +299,7 @@ body {
     margin-left: 40px;
     margin-right: 300px;
     height: 100%;
-    -webkit-user-select: none;
-    -moz-user-select: none; /*禁止双击选定*/
-    -ms-user-select: none;
-    -o-user-select: none;
-    user-select: none;
+    user-select: none; /*禁止双击选定*/
 }
 /* 鼠标滑过时音乐名字被截断 */
 .music-name-cult {
@@ -470,7 +439,6 @@ body {
     max-width: 120px;
     white-space: nowrap;
     text-overflow: ellipsis;
-    -o-text-overflow: ellipsis;
     overflow: hidden;
     margin-bottom: 10px;
     color: #fff;
@@ -571,10 +539,6 @@ body {
 /* 歌曲信息按钮 */
 #music-info {
     transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -moz-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    -ms-transition: all 0.25s ease;
     position: absolute;
     width: 27px;
     height: 26px;
@@ -590,11 +554,9 @@ body {
     background-position: -28px -367px;
     background-color: #353535;
     opacity: 0.3;
-    filter: Alpha(opacity=30);
 }
 #music-info:hover {
     opacity: 1;
-    filter: Alpha(opacity=100);
 }
 /* 标题 */
 .info-title {
@@ -619,11 +581,9 @@ body {
 .player-btn {
     background-image: url("../images/player.png");
     opacity: .8;
-    filter: alpha(opacity=80)
 }
 .player-btn:hover {
     opacity: 1;
-    filter: alpha(opacity=100)
 }
 /* 暂停状态 */
 .btn-state-paused {
@@ -775,10 +735,6 @@ body {
     margin-top: -1px; 
     border-radius: 2px;
     transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -moz-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    -ms-transition: all 0.25s ease;
 }
 /* 进度条小点 */
 .mkpgb-dot {
@@ -793,10 +749,6 @@ body {
     top: 50%; 
     margin-top: -5px;
     transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -moz-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    -ms-transition: all 0.25s ease;
 }
 /* 进度条禁止点击样式 */
 .mkpgb-locked {
@@ -806,12 +758,7 @@ body {
 /* 闪动效果作者：qiuye */
 .dot-move {
     box-shadow: 0 0 20px #fff;
-    -webkit-box-shadow: 0 0 20px #fff;
     animation: dot-move 3s linear 2s infinite;
-    -moz-animation: dot-move 3s linear 2s infinite;
-    -webkit-animation: dot-move 3s linear 2s infinite;
-    -o-animation: dot-move 3s linear 2s infinite;
-    -ms-animation: dot-move 3s linear 2s infinite;
 }
 @-webkit-keyframes dot-move{0%{-webkit-box-shadow: 0 0 20px #fff;}25%{-webkit-box-shadow: 0 0 10px #fff;}50%{-webkit-box-shadow: 0 0 0px #fff;}75%{-webkit-box-shadow: 0 0 10px #fff;}100%{-webkit-box-shadow: 0 0 20px #fff;}}
 @keyframes dot-move{0%{-webkit-box-shadow: 0 0 10px #363333;}25%{-webkit-box-shadow: 0 0 7px #363333;}50%{-webkit-box-shadow: 0 0 0px #fff;}75%{-webkit-box-shadow: 0 0 6px #fff;}100%{-webkit-box-shadow: 0 0 10px #363333;}}

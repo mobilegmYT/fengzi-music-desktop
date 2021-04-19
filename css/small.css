@@ -93,11 +93,7 @@
         background-position: -30px -365px;
         right: 0;
         top: 50%;
-        -webkit-transform: translateY(-50%);
-           -moz-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-             -o-transform: translateY(-50%);
-                transform: translateY(-50%);
+        transform: translateY(-50%);
         z-index: 2;
         cursor: pointer;
     }
