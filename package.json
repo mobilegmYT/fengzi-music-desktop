@@ -2,7 +2,7 @@
   "name": "fengzi-music-desktop",
   "productName": "疯子音乐",
   "copyright": "Copyright 2021 Fengzi. All Rights Reserved. Based on open-source projects.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "The official desktop client for Fengzi Music",
   "main": "main.js",
   "author": "Fengzi",
@@ -31,10 +31,10 @@
     "mac": {
       "category": "public.app-category.music",
       "target": "dmg",
-      "icon": "icon.png"
+      "icon": "macicon.png"
     },
     "dmg": {
-      "icon": "icon.png",
+      "icon": "macicon.png",
       "iconSize": 96,
       "iconTextSize": 14
     }
